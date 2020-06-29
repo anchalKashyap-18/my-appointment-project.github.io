@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>appointment</title>
+<style>
+*{	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	font-family: 'Josefin Sans', sans-serif;
+	
+	}
+	body{
+			background-image:url(img/appoint.png);
+				background-size: cover;
+				
+		}
+h1 {
+  font-size: 5.5em; 
+  font-style: oblique;
+}		
+		
+		
+		
+		
+.wrapper{
+	position: absolute;
+	top: 50%;
+	left: 75%;
+	transform: translate(-50%,-50%);
+	max-width: 350px;
+	width: 100%;
+	background:#50b9f2;
+padding: 55px;
+border-radius: 5px;
+box-shadow: 4px 4px 2px rgba(254,236,164,1);
+}
+.wrapper h2{
+	text-align: center;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	letter-spacing:3px;
+	color: #332902;
+}
+.wrapper h5{
+	text-align: center;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	letter-spacing:3px;
+	color: #332902;
+}
+.wrapper .input_field{
+	margin-bottom: 10px;
+}
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+	width: 100%;
+	border: 1px solid #e0e0e0;
+	padding:10px;
+	
+}
+
+.wrapper textarea{
+	height:  80px;
+	resize: none;
+}
+
+.button{
+position: relative;
+text-align:center;
+width:120px;
+padding:25px;
+font-size:12px;
+color:#0a0a09;
+font-family:poppins;
+font-weight:120;
+border: 5px solid #fff705;
+text-transform:uppercase;
+letter-spacing: 6px;
+cursor:pointer;
+cursor-radius:70px;
+transition:0.5s;
+}
+
+.button:hover
+{
+box-shadow: 0 5px 50px 0 #f5052d inset, 0 5px 50px 0 #f5052d, 
+0 5px 50px #f5052d inset, 0 5px 50px 0 #f5052d;
+tex-shadow:0 0 5px #f5052d,  0 0 5px #f5052d;} 
+
+}
+
+label {
+display: block;
+margin-bottom: 8px;
+}	
+
+label.light{
+font-weight: 300;
+display: inline;
+}
+
+
+	
+	</style>
+	
+
+</head>
+<body>
+<div class="wrapper">
+
+<h5>MAKE AN APPOINTMENT</h5>
+
+<form>
+<div id="error_message"</div>
+<form id="myform"  onsubmit="return validation()">
+<div class="input_field">
+<input type="text" placeholder="Name" id="name" name="Name">
+</div>
+<div class="input_field">
+<input type="text" placeholder="phone number" id="phone number" name="phone number">
+</div>
+<div class="input_field">
+<input type="text" placeholder="Symptoms" id="Symptoms"  name="Symptoms">
+</div>
+<div class="input_field">
+<input type="text" placeholder="email" id="email" name="email">
+</div>
+<select>
+<div class="input_field" name="Department">
+<option value ="Department">Department</option>
+<option value="physicology">physicology</option>
+<option value="nuerology">nuerology</option>
+<option value="gynecology">gynecology</option>
+<option value="orthology">orthology</option>
+<option value="ophthalmologist">ophthalmologist</option>
+<option value="Dermatology">Dermatology</option>
+</div>
+</select>
+<br>
+<br>
+<label for="date">Date</label>
+<input type="date" name="date" value="" required name="date"></input>
+<br>
+<br>
+<label for="time">Time</label>
+<input type="Time" name="Time" value="" required name="time"></input>
+
+<br>
+<br>
+<label for="R1">Male</label>
+<input type="Radio" name="gender"  id="R1" value="M" >
+<label for="R2">Female</label>
+<input type="Radio" name="gender"  id="R2" value="F" >
+
+<div  onclick="window.location.href = 'thnk.html' "class="button">SUBMIT</div></a>
+</div>
+</form> 
+</div>
+
+  
+</div>
+</body>
+</html>
